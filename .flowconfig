@@ -1,0 +1,17 @@
+[ignore]
+node_modules/**
+.cache/**
+
+[include]
+src/**
+
+[libs]
+
+[lints]
+
+[options]
+module.name_mapper='^react-native$' -> '<PROJECT_ROOT>/node_modules/react-native-web/src'
+emoji=true
+include_warnings=true
+
+[strict]
