@@ -6,6 +6,7 @@
   "author": "WDS Production",
   "license": "MIT",
   "scripts": {
+    "build": "webpack",
     "web": "webpack-dev-server --mode development --devtool inline-source-map --hot",
     "test": "echo \"Error: no test specified\""
   },
