@@ -6,7 +6,7 @@ module.exports = merge(common, {
   devServer: {
     contentBase: './dist',
     host: '0.0.0.0',
-    port: 51401,
+    port: 51402,
     // proxy: {
     //   '/api': 'http://localhost:8080',
     // },
