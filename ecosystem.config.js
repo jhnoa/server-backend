@@ -24,7 +24,7 @@ module.exports = {
     production: {
       key: '.ssh/ssh.pem',
       user: 'root',
-      host: '91.121.50.14:51400',
+      host: '91.121.50.14 -p 51400',
       ref: 'origin/master',
       repo: 'https://github.com/jhnoa/server-backend.git',
       path: '/root/node-server/server-backend',
@@ -35,7 +35,7 @@ module.exports = {
     development: {
       key: '.ssh/ssh.pem',
       user: 'root',
-      host: '91.121.50.14:51400',
+      host: '91.121.50.14 -p 51400',
       ref: 'origin/master',
       repo: 'https://github.com/jhnoa/server-backend.git',
       path: '/root/node-server/server-backend',
