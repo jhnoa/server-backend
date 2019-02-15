@@ -3,14 +3,20 @@ module.exports = {
     {
       name: 'API',
       script: 'npm',
+      args: 'start',
 
-      // Options reference: https://pm2.io/doc/en/runtime/reference/ecosystem-file/
       exec_mode: 'cluster',
       instances: 'max',
-      args: 'start',
+
       autorestart: true,
-      watch: false,
       max_memory_restart: '240M',
+
+      watch: ['src'],
+      watch_delay: 1000,
+      ignore_watch: ['node_modules', 'dist'],
+      watch_options: {
+        followSymlinks: false,
+      },
     },
   ],
 
