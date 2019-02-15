@@ -22,10 +22,11 @@ module.exports = {
 
   deploy: {
     production: {
-      user: 'node',
-      host: '212.83.163.1',
+      key: 'ssh.pem',
+      user: 'root',
+      host: '91.121.50.14:51400',
       ref: 'origin/master',
-      repo: 'git@github.com:repo.git',
+      repo: 'https://github.com/jhnoa/server-backend.git',
       path: '/var/www/production',
       'post-deploy':
         'npm install && pm2 reload ecosystem.config.js --env production',
