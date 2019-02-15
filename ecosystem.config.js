@@ -28,8 +28,7 @@ module.exports = {
       ref: 'origin/master',
       repo: 'https://github.com/jhnoa/server-backend.git',
       path: '/root/node-server/server-backend',
-      'post-deploy':
-        'npm install && pm2 reload ecosystem.config.js --env production',
+      'post-deploy': 'yarn && pm2 reload ecosystem.config.js --env production',
     },
     staging: {},
     development: {
