@@ -29,7 +29,8 @@ module.exports = {
       repo: 'https://github.com/jhnoa/server-backend.git',
       path: '/root/node-server/server-backend',
       'pre-deploy': 'pwd',
-      'post-deploy': 'yarn && pm2 reload ecosystem.config.js --env production',
+      'post-deploy':
+        'yarn && pm2 reload ../ecosystem.config.js --env production',
     },
     staging: {},
     development: {
@@ -40,7 +41,7 @@ module.exports = {
       repo: 'https://github.com/jhnoa/server-backend.git',
       path: '/root/node-server/server-backend',
       'pre-deploy': 'pwd',
-      'post-deploy': 'yarn && pm2 reload ecosystem.config.js',
+      'post-deploy': 'yarn && pm2 reload ../ecosystem.config.js',
     },
   },
 };
