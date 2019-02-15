@@ -8,6 +8,10 @@
   "scripts": {
     "build": "webpack --config webpack.prod.js",
     "start": "webpack-dev-server --open --config webpack.dev.js",
+    "production:deploy:setup": "pm2 deploy production setup",
+    "production:deploy:update": "pm2 deploy production update",
+    "development:deploy:setup": "pm2 deploy development setup",
+    "development:deploy:update": "pm2 deploy development update",
     "test": "echo \"Error: no test specified\""
   },
   "dependencies": {
