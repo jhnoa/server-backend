@@ -6,8 +6,8 @@
   "author": "WDS Production",
   "license": "MIT",
   "scripts": {
-    "start": "webpack --config webpack.prod.js",
-    "web": "webpack-dev-server --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "start": "webpack-dev-server --open --config webpack.dev.js",
     "test": "echo \"Error: no test specified\""
   },
   "dependencies": {
