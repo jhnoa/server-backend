@@ -22,16 +22,24 @@ module.exports = {
 
   deploy: {
     production: {
-      key: 'ssh.pem',
+      key: '.ssh/ssh.pem',
       user: 'root',
       host: '91.121.50.14:51400',
       ref: 'origin/master',
       repo: 'https://github.com/jhnoa/server-backend.git',
-      path: '/var/www/production',
+      path: '/root/node-server/server-backend',
       'post-deploy':
         'npm install && pm2 reload ecosystem.config.js --env production',
     },
     staging: {},
-    development: {},
+    development: {
+      key: '.ssh/ssh.pem',
+      user: 'root',
+      host: '91.121.50.14:51400',
+      ref: 'origin/master',
+      repo: 'https://github.com/jhnoa/server-backend.git',
+      path: '/root/node-server/server-backend',
+      'post-deploy': 'npm install && pm2 reload ecosystem.config.js',
+    },
   },
 };
