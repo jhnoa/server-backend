@@ -11,12 +11,12 @@ module.exports = {
       autorestart: true,
       max_memory_restart: '240M',
 
-      watch: ['src'],
-      watch_delay: 1000,
-      ignore_watch: ['node_modules', 'dist'],
-      watch_options: {
-        followSymlinks: false,
-      },
+      // watch: ['src'],
+      // watch_delay: 1000,
+      // ignore_watch: ['node_modules', 'dist'],
+      // watch_options: {
+      //   followSymlinks: false,
+      // },
     },
   ],
 
